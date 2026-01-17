@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPEN CITY | עיר שלי</title>
+    <meta name="description" content="עמוד עיר מותאם לפי בחירה והתחברות" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="index.html#home" aria-label="OPEN CITY">
+          <span class="brand__logo" aria-hidden="true">OC</span>
+          <span class="brand__text">
+            <strong>OPEN CITY</strong>
+            <small>העיר הפתוחה: נתונים מדברים</small>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="תפריט">
+          <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+            ☰ תפריט
+          </button>
+          <div class="nav__menu" id="navMenu">
+            <a href="index.html#topics">תחומים</a>
+            <a href="index.html#feedback">משוב לעיר שלי</a>
+            <a href="index.html#login">התחברות</a>
+            <a class="btn btn--small" href="index.html#contact">צרו קשר</a>
+<div class="lang" aria-label="בחירת שפה">
+  <button type="button" class="lang__btn" data-lang="he" aria-pressed="true">עברית</button>
+  <button type="button" class="lang__btn" data-lang="ar" aria-pressed="false">العربية</button>
+  <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">English</button>
+</div>
+
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- City Hero -->
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="badge" id="cityRoleBadge">טוען…</p>
+            <h1>
+              <span class="accent" id="cityNameTitle">העיר שלי</span>
+              <br />
+              <span class="muted" id="citySubtitle">דף מותאם לפי התחברות</span>
+            </h1>
+            <p class="lead" id="cityIntro">
+              כאן תמצאי נתונים והסברים מותאמים לעיר שבחרת.
+            </p>
+
+            <div class="hero__actions" id="residentActions">
+              <a class="btn" href="index.html#topics">חזרה לתחומים</a>
+
+              <!-- החליפי את ה-URL לאתר החברה שלך -->
+              <a class="btn btn--ghost" id="municipalityLink" href="#" target="_blank" rel="noopener">
+  אתר הרשות המקומית
+</a>
+
+          
+              </a>
+            </div>
+
+            <div class="hero__actions hidden" id="authorityActions">
+              <a class="btn" href="#authorityPanel">לוח רשות מקומית</a>
+              <a class="btn btn--ghost" href="index.html#feedback">צפייה/איסוף משובים</a>
+            </div>
+
+            <div class="stats" aria-label="סטטיסטיקות עיר ">
+              <div class="stat">
+                <strong id="cityStat1">—</strong>
+                <span id="cityStat1Label">נתון עירוני</span>
+              </div>
+              <div class="stat">
+                <strong id="cityStat2">—</strong>
+                <span id="cityStat2Label">נתון עירוני</span>
+              </div>
+              <div class="stat">
+                <strong id="cityStat3">—</strong>
+                <span id="cityStat3Label">נתון עירוני</span>
+              </div>
+            </div>
+
+            <div class="form__actions mt">
+              <button class="btn btn--ghost" id="logoutBtn" type="button">התנתקות</button>
+              <a class="btn btn--small" href="index.html#login">החלפת בחירה</a>
+            </div>
+
+            <p class="hint" id="loginStateHint"></p>
+          </div>
+
+        <!-- City Preview Card (Top Right) -->
+<div class="hero__card">
+  <div class="card">
+    <div class="card__header">
+      <h2>נתונים בעיר שלי</h2>
+      <p>סיכום קצר ממקורות נתונים פתוחים ורשמיים, לפי העיר שנבחרה.</p>
+    </div>
+
+    <div class="card__body" id="cityDataPreview">
+      <!-- נטען אוטומטית באמצעות JavaScript -->
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- City Data Cards -->
+<section class="section" id="cityDataSection">
+  <div class="container">
+    <div class="section__head">
+      <h2>הנתונים של העיר שלי</h2>
+      <p>רשימת מאגרי מידע וקבצי נתונים זמינים לעיר שנבחרה, עם קישורים למקור הרשמי.</p>
+    </div>
+
+    <div class="cards" id="cityCards">
+      <!-- נטען אוטומטית באמצעות JavaScript -->
+    </div>
+  </div>
+</section>
+
+<!-- Authority Panel (only for authority) -->
+<section class="section section--alt hidden" id="authorityPanel">
+  <div class="container">
+    <div class="section__head">
+      <h2>לוח רשות מקומית</h2>
+      <p>צפייה במשובים לפי העיר והוספת מידע עירוני רלוונטי.</p>
+    </div>
+
+    <div class="grid2">
+      <div class="panel">
+        <h3>משובים שהתקבלו לעיר: <span id="dashCityName"></span></h3>
+        <div id="feedbackList" class="list"></div>
+      </div>
+
+      <div class="panel">
+        <h3>הוספת מידע לעיר</h3>
+
+        <label>
+          כותרת
+          <input
+            id="cityDataTitle"
+            type="text"
+            placeholder="לדוגמה: שינוי זמני פינוי אשפה / פתיחת פארק חדש"
+          />
+        </label>
+
+        <label class="mt">
+          תיאור / מידע
+          <textarea
+            id="cityDataBody"
+            rows="4"
+            placeholder="כתבו כאן מידע עדכני ורלוונטי לתושבים לגבי העיר..."
+          ></textarea>
+        </label>
+
+        <div class="form__actions mt">
+          <button class="btn btn--small" id="addCityDataBtn" type="button">הוספה</button>
+        </div>
+
+        <div class="mt">
+          <h4>מידע שנוסף לעיר</h4>
+          <div id="cityDataList" class="list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> OPEN CITY • עמוד “עיר שלי”</p>
+        <a href="index.html#home">חזרה לדף הבית</a>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

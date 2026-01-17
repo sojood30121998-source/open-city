@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPEN CITY | העיר הפתוחה: נתונים מדברים</title>
+    <meta name="description" content="OPEN CITY מנגיש נתונים עירוניים פתוחים ומתרגם אותם להבנה פשוטה בחיי היומיום: דיור, תחבורה, חינוך, סביבה ועוד." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Top bar -->
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="#home" aria-label="OPEN CITY">
+          <span class="brand__logo" aria-hidden="true">OC</span>
+          <span class="brand__text">
+            <strong>OPEN CITY</strong>
+            <small>העיר הפתוחה: נתונים מדברים</small>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="תפריט">
+          <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+            ☰ תפריט
+          </button>
+          <div class="nav__menu" id="navMenu">
+            <a href="#about">על האתר</a>
+            <a href="#how">איך זה עובד</a>
+            <a href="#forwho">למי זה</a>
+           <a href="#login">התחברות</a>
+<a href="#feedback">משוב לעיר שלי</a>
+<a href="#sources">מקורות</a>
+<a class="btn btn--small" href="#contact">צרו קשר</a>
+<div class="lang" aria-label="בחירת שפה">
+  <button type="button" class="lang__btn" data-lang="he" aria-pressed="true">עברית</button>
+  <button type="button" class="lang__btn" data-lang="ar" aria-pressed="false">العربية</button>
+  <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">English</button>
+</div>
+
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="badge">שקיפות • נגישות • השתתפות אזרחית</p>
+            <h1>הנתונים של העיר שלך כבר קיימים —<br /><span class="accent">בואי נהפוך אותם לברורים.</span></h1>
+            <p class="lead">
+              OPEN CITY הוא אתר אזרחי שמנגיש נתונים עירוניים פתוחים ומתרגם אותם
+              ממספרים וטבלאות להבנה פשוטה של חיי היומיום בעיר: דיור, תחבורה,
+              חינוך, סביבה, ביטחון אישי ושירותים עירוניים.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn" href="#topics">לצפייה בתחומים</a>
+              <a class="btn btn--ghost" href="#about">מה זה OPEN CITY?</a>
+            </div>
+
+            <div class="stats" aria-label="נתוני הדגמה">
+              <div class="stat">
+                <strong id="statTopics">6</strong>
+                <span>תחומי תוכן</span>
+              </div>
+              <div class="stat">
+                <strong id="statGuides">18</strong>
+                <span>הסברים קצרים</span>
+              </div>
+              <div class="stat">
+                <strong id="statQuestions">30+</strong>
+                <span>שאלות אזרחיות</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__card" aria-label="כרטיס הדגמה">
+            <div class="card">
+              <div class="card__header">
+                <h2>דוגמה: תחבורה</h2>
+                <p>איך נתונים עוזרים להבין זמני נסיעה ושירות?</p>
+              </div>
+
+              <div class="card__body">
+                <div class="mini">
+                  <span class="mini__label">מה רואים?</span>
+                  <span class="mini__value">קווים עמוסים, זמני המתנה, תדירות</span>
+                </div>
+                <div class="mini">
+                  <span class="mini__label">למה זה חשוב?</span>
+                  <span class="mini__value">כי זה משפיע על זמן, כסף ואיכות חיים</span>
+                </div>
+                <div class="mini">
+                  <span class="mini__label">שאלה אזרחית</span>
+                  <span class="mini__value">האם השירות שוויוני בין שכונות?</span>
+                </div>
+
+                <button class="btn btn--small" id="demoToastBtn" type="button">
+                  תראי איך זה מרגיש
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section__head">
+            <h2>על האתר</h2>
+            <p>
+              ערים אוספות מידע רב, אבל הוא לעיתים נשאר טכני ולא נגיש. OPEN CITY נועד לגשר על הפער —
+              ולהפוך נתונים פתוחים לכלי להבנה, שאלת שאלות וקבלת החלטות מושכלת ברמה המקומית.
+            </p>
+          </div>
+
+          <div class="grid3">
+            <article class="feature">
+              <h3>נגישות</h3>
+              <p>כל נתון מגיע עם הסבר קצר: מה הוא אומר, ואיך הוא משפיע בפועל על החיים בעיר.</p>
+            </article>
+            <article class="feature">
+              <h3>הקשר</h3>
+              <p>הנתונים מחוברים לסיפור: שכונות, שירותים עירוניים, תחבורה, איכות סביבה ועוד.</p>
+            </article>
+            <article class="feature">
+              <h3>שיח אזרחי</h3>
+              <p>בכל תחום יש שאלות שמזמינות חשיבה ובדיקה: איפה יש פערים ומה אפשר לשפר.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- How -->
+      <section class="section section--alt" id="how">
+        <div class="container">
+          <div class="section__head">
+            <h2>איך זה עובד?</h2>
+            <p>בכל עמוד תחום תמצאו את אותו מבנה, כדי שיהיה קל להבין מהר.</p>
+          </div>
+
+          <ol class="steps">
+            <li>
+              <strong>📊 נתון</strong>
+              <span>נתונים פתוחים (או דוגמה) שמסודרים בצורה ברורה.</span>
+            </li>
+            <li>
+              <strong>🧠 פירוש</strong>
+              <span>מה הנתון אומר ומה הוא *לא* אומר.</span>
+            </li>
+            <li>
+              <strong>🏙️ משמעות יומיומית</strong>
+              <span>איך זה משפיע על תושבים, שכונות ושירותים.</span>
+            </li>
+            <li>
+              <strong>🗣️ שאלות אזרחיות</strong>
+              <span>שאלות שעוזרות לבדוק שוויון, יעילות ושקיפות.</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Topics -->
+      <section class="section" id="topics">
+        <div class="container">
+          <div class="section__head">
+            <h2>תחומים באתר</h2>
+            <p>בחרי תחום כדי להתחיל לקרוא את העיר דרך הנתונים.</p>
+          </div>
+
+          <div class="cards" id="topicCards">
+            <!-- נבנה גם ב-JS, אבל שמים גם HTML כדי שיהיה יפה בלי JS -->
+            <a class="topic" href="#" data-topic="housing">
+              <h3>🏠 דיור</h3>
+              <p>מחירים, היצע, פערים בין אזורים, עומס בנייה.</p>
+            </a>
+            <a class="topic" href="#" data-topic="transport">
+              <h3>🚍 תחבורה</h3>
+              <p>תדירות קווים, זמני נסיעה, כיסוי שכונות.</p>
+            </a>
+            <a class="topic" href="#" data-topic="education">
+              <h3>🎓 חינוך</h3>
+              <p>צפיפות בכיתות, משאבים, נגישות למסגרות.</p>
+            </a>
+            <a class="topic" href="#" data-topic="environment">
+              <h3>🌱 סביבה</h3>
+              <p>איכות אוויר, פסולת, שטחים ירוקים.</p>
+            </a>
+            <a class="topic" href="#" data-topic="safety">
+              <h3>🛡️ ביטחון אישי</h3>
+              <p>תאורה, מוקדי סיכון, דיווחים ציבוריים.</p>
+            </a>
+            <a class="topic" href="#" data-topic="services">
+              <h3>🏛️ שירותים עירוניים</h3>
+              <p>ניקיון, פניות, זמני טיפול, נגישות.</p>
+            </a>
+          </div>
+
+          <!-- Modal -->
+          <dialog class="modal" id="topicModal" aria-label="חלון מידע על תחום">
+            <div class="modal__header">
+              <h3 id="modalTitle">כותרת</h3>
+              <button class="modal__close" id="modalClose" aria-label="סגירה">✕</button>
+            </div>
+            <div class="modal__body">
+              <p id="modalDesc"></p>
+              <div class="modal__box">
+                <h4>שאלות אזרחיות לדוגמה</h4>
+                <ul id="modalQuestions"></ul>
+              </div>
+              <div class="modal__actions">
+                <button class="btn btn--ghost" id="modalBack" type="button">חזרה</button>
+                <a class="btn" href="#contact">רוצה לבנות את העמוד הזה</a>
+              </div>
+            </div>
+          </dialog>
+        </div>
+      </section>
+<!-- Login -->
+<section class="section section--alt" id="login">
+  <div class="container">
+    <div class="section__head">
+      <h2>התחברות</h2>
+      <p>התחברות אנונימית ללא פרטים מזהים. פשוט בוחרים מי אתם/ן ומה העיר.</p>
+    </div>
+
+    <div class="grid2">
+      <!-- Who am I -->
+      <div class="panel">
+        <h3>מי אני?</h3>
+
+        <div class="choice">
+          <label class="radio">
+            <input type="radio" name="role" value="resident" checked />
+            <span>תושב/ת</span>
+          </label>
+
+          <label class="radio">
+            <input type="radio" name="role" value="authority" />
+            <span>פונה מטעם רשות מקומית</span>
+          </label>
+        </div>
+
+        <label class="mt">
+          העיר שלי
+          <select id="citySelect">
+            <option value="Nazareth">נצרת</option>
+            <option value="Tel Aviv-Yafo">תל אביב–יפו</option>
+            <option value="Jerusalem">ירושלים</option>
+            <option value="Ashkelon">אשקלון</option>
+            <option value="Umm al-Fahm">אום אל-פחם</option>
+            <option value="Haifa">חיפה</option>
+            <option value="Beer Sheva">באר שבע</option>
+          </select>
+        </label>
+
+        <div id="authorityPasswordBox" class="mt hidden">
+          <label>
+            סיסמה (דמו)
+            <input id="authorityPass" type="password" placeholder="הקלידי 1111" />
+          </label>
+          <p class="hint">* בדמו הסיסמה היא 1111.</p>
+        </div>
+
+        <div class="form__actions mt">
+          <button class="btn" id="loginBtn" type="button">התחבר/י</button>
+          <button class="btn btn--ghost" id="logoutBtn" type="button">התנתקות</button>
+        </div>
+
+        <p class="hint" id="loginStateHint"></p>
+      </div>
+
+      <!-- Authority dashboard -->
+      <div class="panel hidden" id="authorityDashboard">
+        <h3>לוח רשות מקומית</h3>
+        <p class="muted">כאן אפשר לראות משובים של אזרחים, וגם להוסיף מידע לעיר (דמו).</p>
+
+        <div class="dash">
+          <div class="dash__box">
+            <h4>משובים שהתקבלו לעיר: <span id="dashCityName"></span></h4>
+            <div id="feedbackList" class="list"></div>
+          </div>
+
+          <div class="dash__box mt">
+            <h4>הוספת מידע לעיר (דמו)</h4>
+            <label>
+              כותרת
+              <input id="cityDataTitle" type="text" placeholder="למשל: פרויקט תחבורה חדש" />
+            </label>
+            <label class="mt">
+              תיאור / מידע
+              <textarea id="cityDataBody" rows="3" placeholder="מה תרצי להוסיף לאתר לגבי העיר?"></textarea>
+            </label>
+            <div class="form__actions mt">
+              <button class="btn btn--small" id="addCityDataBtn" type="button">הוספה</button>
+            </div>
+
+            <div class="mt">
+              <h4>מידע שנוסף לעיר (דמו)</h4>
+              <div id="cityDataList" class="list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+      <!-- For who -->
+      <section class="section section--alt" id="forwho">
+        <div class="container">
+          <div class="section__head">
+            <h2>למי האתר מיועד?</h2>
+            <p>כל מי שרוצה להבין טוב יותר איך העיר עובדת — בלי להיות מומחה.</p>
+          </div>
+
+          <div class="grid2">
+            <div class="panel">
+              <h3>תושבים/ות</h3>
+              <p>לבדוק מידע, להבין פערים בין שכונות, ולשאול שאלות נכונות.</p>
+            </div>
+            <div class="panel">
+              <h3>סטודנטים/ות וחוקרים/ות</h3>
+              <p>להשתמש בדוגמאות נגישות לניתוח מדיניות, חדשנות ונתונים.</p>
+            </div>
+            <div class="panel">
+              <h3>פעילים חברתיים</h3>
+              <p>לבסס טיעונים על נתונים ולחזק שיח ציבורי מבוסס עובדות.</p>
+            </div>
+            <div class="panel">
+              <h3>רשויות מקומיות</h3>
+              <p>לראות איך הנגשה והסברים משפרים אמון ציבורי ושקיפות.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sources -->
+      <section class="section" id="sources">
+        <div class="container">
+          <div class="section__head">
+            <h2>מקורות והשראה</h2>
+            <p>האתר מבוסס על עקרונות ממשל פתוח ונתונים פתוחים.</p>
+          </div>
+<!-- Feedback -->
+<section class="section" id="feedback">
+  <div class="container">
+    <div class="section__head">
+      <h2>מה הייתי משנה בעיר שלי?</h2>
+      <p>אפשר לשלוח משוב אנונימי או עם שם. בדמו — ההודעה נשמרת באתר ומופיעה לרשות המקומית אם התחברה.</p>
+    </div>
+
+    <form class="form" id="feedbackForm" onsubmit="return false">
+      <div class="form__row">
+        <label>
+          העיר שלי
+          <select id="feedbackCity">
+            <option value="Nazareth">נצרת</option>
+            <option value="Tel Aviv-Yafo">תל אביב–יפו</option>
+            <option value="Jerusalem">ירושלים</option>
+            <option value="Ashkelon">אשקלון</option>
+            <option value="Umm al-Fahm">אום אל-פחם</option>
+            <option value="Haifa">חיפה</option>
+            <option value="Beer Sheva">באר שבע</option>
+          </select>
+        </label>
+
+        <label>
+          אופן שליחה
+          <select id="identityMode">
+            <option value="anon" selected>אנונימי</option>
+            <option value="named">עם שם</option>
+          </select>
+        </label>
+      </div>
+
+      <label id="nameBox" class="hidden">
+        שם (רשות)
+        <input id="senderName" type="text" placeholder="למשל: סוז'וד" />
+      </label>
+
+      <label class="mt">
+        מה תרצי להעביר לרשות?
+        <textarea id="feedbackMessage" rows="5" placeholder="כתבי כאן את ההצעה/בעיה/רעיון…"></textarea>
+      </label>
+
+      <div class="form__actions mt">
+        <button class="btn" id="sendFeedbackBtn" type="button">שלח/י לרשות שלי</button>
+        <p class="hint">בדמו אין שליחה אמיתית במייל. בהמשך אפשר לחבר לשרת/Google Forms.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+          <div class="sources">
+            <a class="source" href="https://www.oecd.org/gov/digital-government/open-government-data/" target="_blank" rel="noopener">
+              OECD – Open Government Data
+            </a>
+            <a class="source" href="https://opendatacharter.net/why-open-data/" target="_blank" rel="noopener">
+              Open Data Charter – Why Open Data Matters
+            </a>
+            <a class="source" href="https://www.worldbank.org/en/topic/digitaldevelopment/brief/open-data" target="_blank" rel="noopener">
+              World Bank – Open Data for Development
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section section--alt" id="contact">
+        <div class="container">
+          <div class="section__head">
+            <h2>צרו קשר</h2>
+            <p>רוצה להפוך את זה לפרויקט מלא (עם עמודים לכל תחום ונתונים אמיתיים)? כתבי כאן הודעה.</p>
+          </div>
+
+          <form class="form" onsubmit="return false" aria-label="טופס יצירת קשר">
+            <div class="form__row">
+              <label>
+                שם
+                <input type="text" placeholder="איך קוראים לך?" />
+              </label>
+              <label>
+                אימייל
+                <input type="email" placeholder="name@example.com" />
+              </label>
+            </div>
+            <label>
+              הודעה
+              <textarea rows="4" placeholder="מה תרצי לבנות/להוסיף?"></textarea>
+            </label>
+
+            <div class="form__actions">
+              <button class="btn" id="fakeSendBtn" type="button">שליחה (דמו)</button>
+              <p class="hint">הטופס כרגע דמו בלבד. אפשר לחבר אותו בהמשך ל-Google Forms / Formspree.</p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> OPEN CITY • פרויקט סטודנטיאלי להנגשת נתונים עירוניים פתוחים</p>
+        <a href="#home">חזרה למעלה ↑</a>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
