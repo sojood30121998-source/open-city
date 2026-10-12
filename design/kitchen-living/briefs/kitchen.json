@@ -1,0 +1,69 @@
+{
+ "schema_version": "banana.visual-brief.v1",
+ "goal": "Eye-level interior render of the kitchen for a client presentation.",
+ "facts": [
+  "One open-plan kitchen, dining and living space of 85.93 m2, about 5.98 m wide and 15 m deep, with a separate 1.92 m2 guest toilet and a straight staircase going up on the left side.",
+  "Kitchen at the far end: L-shaped run of tall and base cabinets along the end wall and right wall, a five-sided bay window projecting from the end wall, and a 260 x 110 cm island with an induction cooktop, an undermount sink and four bar stools on the living-room side.",
+  "A single round structural column stands in the open space between the kitchen and dining zone.",
+  "Entrance door on the right wall between the kitchen and dining zone.",
+  "Dining zone: one long rectangular table about 240 x 100 cm with eight chairs, and two lounge armchairs against the left wall.",
+  "A freestanding low media wall about 20 cm deep separates dining from living.",
+  "Living zone: a long sofa under a full-width window on the bottom wall, a second sofa on the right wall, two armchairs on the left wall, and two nested square coffee tables in the centre.",
+  "Several tall narrow windows on both long side walls."
+ ],
+ "locks": [
+  "Follow the supplied floor plan for room shape, zone order, wall, window, door and stair positions, and furniture placement.",
+  "Keep one island, one round column, one dining table with eight chairs, and the bay window.",
+  "No text, dimensions, labels, logos or watermarks in the image."
+ ],
+ "freedoms": [
+  "Exact finishes, lighting fixtures, rugs, plants, art and small styling props may be chosen to fit the style."
+ ],
+ "direction": {
+  "mode": "creative",
+  "thesis": "Warm modern calm: one continuous light-oak and warm-white volume that reads as a single, generous room.",
+  "signature": "Sage-green upholstery throughout, echoing the plan, against a honed travertine island and matte-black details.",
+  "avoid": "Generic cold grey showroom render with glossy white surfaces and empty, staged rooms."
+ },
+ "composition": [
+  "Eye-level camera at 1.5 m standing in the dining zone, looking toward the bay window and the L-shaped kitchen.",
+  "The island with cooktop, sink and four bar stools is the focal point in the foreground; the round column is visible at the side."
+ ],
+ "rendering": [
+  "Photorealistic architectural visualization at professional interior-design presentation quality.",
+  "Materials: wide-plank light oak floor, warm white plaster walls, light oak and warm-white flat-panel kitchen cabinetry, honed travertine island, matte black tapware and slim pendant lights, sage-green boucle and linen upholstery, natural wool rug, linen curtains.",
+  "Soft natural daylight from the windows, warm accent lighting, realistic shadows and reflections, correct scale and vertical lines."
+ ],
+ "typography": {
+  "exact_copy": [],
+  "instructions": []
+ },
+ "references": [
+  {
+   "disclosure_alias": "user floor plan",
+   "role": "object",
+   "purpose": "geometry and furniture layout",
+   "subject_id": "open-plan-floor",
+   "authority": {
+    "rights_or_license": "affirmed",
+    "identity_or_likeness": "not_applicable",
+    "customer_or_private_asset": "not_applicable",
+    "endorsement_or_representation": "not_applicable",
+    "provider_transmission": "affirmed",
+    "intended_use": "Concept interior-design renders for the owner's own design work."
+   }
+  }
+ ],
+ "output": {
+  "aspect_ratio": "16:9",
+  "image_size": "1K",
+  "mime_type": "image/jpeg",
+  "delivery_notes": [
+   "Presentation-board quality at 1K."
+  ]
+ },
+ "review_tests": [
+  "Bay window, L-shaped run and island with four stools are visible and match the plan.",
+  "Materials and palette follow the brief; no text appears."
+ ]
+}
